@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Main from './components/Main';
+import video from "./assets/video.mp4";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className='headerContainer'>
+        <h2>The Star Wars Characters</h2>
+        <video autoPlay muted loop className="videoBackground" src={video}></video>
       </header>
+      <Main/>
     </div>
   );
 }
